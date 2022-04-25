@@ -14,13 +14,21 @@ class MainWindowView(Frame):
             bg="#fff",
         )
 
+        self.grid_propagate(False)
 
-class ImageDisplayView(Frame):
+        # Parts of the window
+        self.image_display = ImageDisplayRoll(self)
+
+        # Layout of the window
+        self.image_display.grid(row=0, column=0)
+
+
+class ImageDisplayRoll(Frame):
     def __init__(self, master):
         Frame.__init__(self, master)
 
         self.config(
-            width=500,
+            width=300,
             height=500,
-            bg="#fff",
+            bg="brown",
         )
