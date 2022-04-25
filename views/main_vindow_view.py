@@ -9,6 +9,17 @@ class MainWindowView(Frame):
 
         # Configurations of the window
         self.config(
+            width=800,
+            height=500,
+            bg="#fff",
+        )
+
+
+class ImageDisplayView(Frame):
+    def __init__(self, master):
+        Frame.__init__(self, master)
+
+        self.config(
             width=500,
             height=500,
             bg="#fff",
