@@ -4,3 +4,5 @@
 *.png
 *.gif
 *.json
+*.pyc
+*.cpython
